@@ -199,18 +199,18 @@
                 <div class="h-px bg-white/20 flex-1"></div>
             </div>
 
-            <form action="javascript:void(0)" class="space-y-4">
+            <form id="dispatchForm" class="space-y-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                    <input class="bg-white/10 border border-white/10 rounded-xl p-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:bg-white/20 outline-none transition-all" placeholder="Your Name" type="text"/>
-                    <input class="bg-white/10 border border-white/10 rounded-xl p-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:bg-white/20 outline-none transition-all" placeholder="Phone Number" type="tel"/>
+                    <input id="userName" required class="bg-white/10 border border-white/10 rounded-xl p-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:bg-white/20 outline-none transition-all" placeholder="Your Name" type="text"/>
+                    <input id="userPhone" required class="bg-white/10 border border-white/10 rounded-xl p-4 text-white placeholder:text-white/40 focus:ring-2 focus:ring-primary focus:bg-white/20 outline-none transition-all" placeholder="Phone Number" type="tel"/>
                 </div>
-                <select class="w-full bg-white/10 border border-white/10 rounded-xl p-4 text-white focus:ring-2 focus:ring-primary focus:bg-white/20 outline-none transition-all appearance-none cursor-pointer">
-                    <option class="bg-on-background">Select Emergency Issue</option>
-                    <option class="bg-on-background">Burst Pipe / Major Leak</option>
-                    <option class="bg-on-background">Sewage Backup</option>
-                    <option class="bg-on-background">No Hot Water</option>
-                    <option class="bg-on-background">Clogged Drain/Toilet</option>
-                    <option class="bg-on-background">Smart System Failure</option>
+                <select id="emergencyIssue" required class="w-full bg-white/10 border border-white/10 rounded-xl p-4 text-white focus:ring-2 focus:ring-primary focus:bg-white/20 outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" class="bg-on-background">Select Emergency Issue</option>
+                    <option value="Burst Pipe" class="bg-on-background">Burst Pipe / Major Leak</option>
+                    <option value="Sewage Backup" class="bg-on-background">Sewage Backup</option>
+                    <option value="No Hot Water" class="bg-on-background">No Hot Water</option>
+                    <option value="Clogged Drain" class="bg-on-background">Clogged Drain/Toilet</option>
+                    <option value="Smart System Failure" class="bg-on-background">Smart System Failure</option>
                 </select>
                 <button class="w-full border-2 border-white/20 text-white hover:bg-white hover:text-on-background font-black py-5 rounded-xl uppercase tracking-widest transition-all duration-300" type="submit">
                     Request Dispatch Now
@@ -522,6 +522,26 @@
         scale: 2,
         rotation: 360,
         opacity: 0
+    });
+
+    // Form WhatsApp Logic
+    document.getElementById('dispatchForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('userName').value;
+        const phone = document.getElementById('userPhone').value;
+        const issue = document.getElementById('emergencyIssue').value;
+        const targetNumber = "17189713278";
+
+        const text = `Hi Brooklyn FastFlow, I need emergency help!
+Name: ${name}
+Phone: ${phone}
+Issue: ${issue}
+Please dispatch a master plumber to my location ASAP.`;
+
+        const encodedText = encodeURIComponent(text);
+        const whatsappUrl = `https://wa.me/${targetNumber}?text=${encodedText}`;
+
+        window.open(whatsappUrl, '_blank');
     });
 
 </script>
