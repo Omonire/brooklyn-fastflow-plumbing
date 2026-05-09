@@ -475,34 +475,40 @@
     // Section Reveal Animations
     const sections = document.querySelectorAll('section:not(#hero)');
     sections.forEach(section => {
-        gsap.from(section, {
+        gsap.set(section, { opacity: 0, y: 50 });
+        gsap.to(section, {
             scrollTrigger: {
                 trigger: section,
-                start: "top 80%",
-                toggleActions: "play none none reverse"
+                start: "top 90%",
+                toggleActions: "play none none none"
             },
-            y: 50,
-            opacity: 0,
+            y: 0,
+            opacity: 1,
             duration: 1,
-            ease: "power3.out"
+            ease: "power3.out",
+            overwrite: "auto"
         });
     });
 
     // Refined Grid Item Entrance
     const grids = document.querySelectorAll('.grid');
     grids.forEach(grid => {
-        gsap.from(grid.children, {
+        // First, ensure they aren't hidden if JS fails or ScrollTrigger is weird
+        gsap.set(grid.children, { opacity: 0, scale: 0.8, rotationX: 45 });
+
+        gsap.to(grid.children, {
             scrollTrigger: {
                 trigger: grid,
-                start: "top 85%",
-                toggleActions: "play none none reverse"
+                start: "top 90%",
+                toggleActions: "play none none none" // Don't reverse so they stay visible
             },
-            scale: 0.8,
-            rotationX: 45,
-            opacity: 0,
+            scale: 1,
+            rotationX: 0,
+            opacity: 1,
             duration: 1,
             stagger: 0.1,
-            ease: "back.out(1.7)"
+            ease: "back.out(1.7)",
+            overwrite: "auto"
         });
     });
 
