@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brooklyn FastFlow Plumbing | 24/7 Emergency Service</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#264191",
+                      "on-background": "#191c1e",
+                      "surface-bright": "#f7f9fb",
+                      "surface-variant": "#e0e3e5",
+                      "on-secondary-fixed": "#00164e",
+                      "inverse-surface": "#2d3133",
+                      "secondary-fixed": "#dce1ff",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#fffaf9",
+                      "inverse-on-surface": "#eff1f3",
+                      "primary-fixed": "#ffdada",
+                      "surface-container-low": "#f2f4f6",
+                      "primary-container": "#e11d48",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#e5bdbe",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed": "#131b2e",
+                      "on-primary-fixed": "#40000c",
+                      "tertiary": "#535b71",
+                      "surface-container": "#eceef0",
+                      "surface-container-highest": "#e0e3e5",
+                      "on-tertiary-fixed-variant": "#3f465c",
+                      "secondary": "#4059aa",
+                      "on-tertiary": "#ffffff",
+                      "on-primary-fixed-variant": "#920028",
+                      "surface": "#f7f9fb",
+                      "secondary-fixed-dim": "#b6c4ff",
+                      "on-surface": "#191c1e",
+                      "on-tertiary-container": "#fcfaff",
+                      "inverse-primary": "#ffb3b6",
+                      "primary-fixed-dim": "#ffb3b6",
+                      "secondary-container": "#8fa7fe",
+                      "outline": "#906f70",
+                      "on-secondary-container": "#1d3989",
+                      "surface-dim": "#d8dadc",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "background": "#f7f9fb",
+                      "tertiary-fixed": "#dae2fd",
+                      "tertiary-fixed-dim": "#bec6e0",
+                      "surface-container-high": "#e6e8ea",
+                      "tertiary-container": "#6c738a",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#be0037",
+                      "on-surface-variant": "#5c3f40",
+                      "error": "#ba1a1a",
+                      "primary": "#b80035"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "section-gap": "80px",
+                      "container-max": "1280px",
+                      "base": "8px",
+                      "gutter": "24px",
+                      "element-gap": "16px"
+              },
+              "fontFamily": {
+                      "body-lg": ["Inter"],
+                      "label-bold": ["Inter"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "display-lg": ["Montserrat"],
+                      "headline-md": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "body-md": ["Inter"],
+                      "callout": ["Montserrat"]
+              },
+              "fontSize": {
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-bold": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "34px", "fontWeight": "700"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "callout": ["20px", {"lineHeight": "24px", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes pulse-red {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(184, 0, 53, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(184, 0, 53, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(184, 0, 53, 0); }
+        }
+        .pulse-dot {
+            animation: pulse-red 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-4 h-16 bg-secondary text-on-secondary border-b-2 border-primary shadow-md z-50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="home_repair_service">home_repair_service</span>
+<span class="text-headline-md font-headline-md font-bold uppercase tracking-tighter">Brooklyn FastFlow</span>
+</div>
+<a class="bg-primary hover:bg-on-secondary-fixed-variant text-on-primary font-label-bold text-label-bold px-4 py-2 rounded-lg transition-colors active:scale-95 duration-100 flex items-center gap-2" href="tel:7185550198">
+            CALL NOW
+        </a>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[707px] flex flex-col justify-center px-margin-mobile py-element-gap overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-secondary/85 mix-blend-multiply"></div>
+<img class="w-full h-full object-cover" data-alt="A professional plumber in a navy blue uniform inspecting a complex pipe system under a kitchen sink in a modern Brooklyn brownstone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoAqobUNRQDLXZPra-5m6uh_YaN-RCsQv0kEtegRI4xzR5UjlLeGF_2ciWj-6fShLWAqfOwp1lsUw-DXXCA6WX4XvFpj76uORUaGDYIUUkzk0m3SlbHGb_48HRN4Z5Sx1pfh0HXO-d-CwfRpktfaUOXrPQn9vt1Ct09lzxLlPw7lknLasNXR2P3gTkAy7CSa5h9cDDieK1XiFMeF-1V1mv7hmoLYe3DG1K38ONv7sqPxWDX4Sou-QOGDKjhKAFU8aUxXvwz3Ki4Jo5"/>
+</div>
+<div class="relative z-10 space-y-6">
+<div class="inline-flex items-center gap-2 bg-primary text-on-primary px-3 py-1 rounded-full text-label-bold font-label-bold">
+<span class="w-2 h-2 bg-white rounded-full pulse-dot"></span>
+                    ACTIVE NOW IN BROOKLYN
+                </div>
+<h1 class="text-display-lg font-display-lg text-on-secondary leading-tight">24 Hour <span class="text-primary-container">Brooklyn Plumber</span> — Emergency Plumbing NYC: Arrives in Under 60 Minutes</h1>
+<p class="text-body-lg font-body-lg text-on-secondary/90 max-w-xl">
+                    When a plumbing emergency hits, every minute matters. We prioritize Brooklyn residents with immediate dispatch for burst pipes, clogs, and leaks.
+                </p>
+<!-- High Conversion Form / CTA Area -->
+<p class="text-error-container bg-error/20 p-3 rounded-lg text-sm font-bold border border-error/30 mb-2">
+                    ⚠️ <strong>URGENT:</strong> Delaying a leak can cause thousands in property damage within hours. Stop the flooding now before it spreads.
+                </p><div class="flex flex-col gap-4 pt-4 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20">
+<a class="bg-primary text-on-primary py-5 px-8 rounded-lg text-center font-bold text-callout uppercase shadow-lg active:scale-95 transition-transform" href="tel:7185550198">
+                        Get Emergency Plumber in 60 Minutes
+                    </a>
+<p class="text-center text-white font-label-bold text-label-bold italic">
+                        Most emergency calls are answered in under 5 minutes
+                    </p>
+<div class="h-[1px] bg-white/20 my-2"></div>
+<form action="/dispatch" method="POST" class="space-y-3">
+<h3 class="text-on-secondary font-bold text-center mb-2">Or Request Instant Dispatch</h3>
+<div class="grid grid-cols-1 gap-2">
+<input class="bg-white/90 rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary outline-none" name="name" placeholder="Name" type="text" required/>
+<input class="bg-white/90 rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary outline-none" name="phone" placeholder="Phone Number" type="tel" required/>
+<select class="bg-white/90 rounded-lg p-3 text-on-surface focus:ring-2 focus:ring-primary outline-none" name="issue">
+<option value="">Select Emergency Issue</option>
+<option value="Burst Pipe / Major Leak">Burst Pipe / Major Leak</option>
+<option value="Sewage Backup">Sewage Backup</option>
+<option value="No Hot Water">No Hot Water</option>
+<option value="Clogged Drain/Toilet">Clogged Drain/Toilet</option>
+<option value="Other Emergency">Other Emergency</option>
+</select>
+</div>
+<button class="w-full border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-4 rounded-lg uppercase tracking-wide transition-colors" type="submit">
+                            Request Dispatch Now
+                        </button>
+</form>
+</div>
+<!-- Mobile Trust Badges -->
+<div class="flex justify-center gap-6 pt-2">
+<div class="flex flex-col items-center opacity-90">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="verified">verified</span>
+<span class="text-[10px] text-white font-bold uppercase mt-1">Google Verified</span>
+</div>
+<div class="flex flex-col items-center opacity-90">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="assignment_ind">assignment_ind</span>
+<span class="text-[10px] text-white font-bold uppercase mt-1">NYC Licensed</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Proof Section Bar -->
+<div class="bg-on-secondary-fixed-variant py-6 text-on-secondary">
+<div class="max-w-container-max mx-auto px-margin-mobile">
+<div class="grid grid-cols-1 gap-4 text-sm font-bold uppercase tracking-tight">
+<div class="flex items-center gap-2"><span class="text-primary-container">✔</span> Licensed NYC Plumbing Contractor</div>
+<div class="flex items-center gap-2"><span class="text-primary-container">✔</span> 10+ Years Experience</div>
+<div class="flex items-center gap-2"><span class="text-primary-container">✔</span> 5,000+ Emergency Jobs Completed</div>
+<div class="flex items-center gap-2"><span class="text-primary-container">✔</span> Fully Insured &amp; Background Checked</div>
+</div>
+</div>
+</div>
+<!-- Availability & Trust Bar -->
+<div class="bg-surface-container-highest py-4 border-b border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile flex flex-wrap items-center justify-center gap-4">
+<div class="flex items-center gap-2 bg-on-tertiary-fixed-variant/10 px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<span class="text-label-bold font-label-bold text-secondary">Local Brooklyn Dispatch</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[#FFB800]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#FFB800]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#FFB800]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#FFB800]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[#FFB800]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-bold font-label-bold ml-2">Top Rated Brooklyn Plumber</span>
+</div>
+</div>
+</div>
+<!-- Testimonial Section -->
+<section class="py-12 bg-white px-margin-mobile border-b border-outline-variant">
+<div class="max-w-xl mx-auto text-center space-y-4">
+<h2 class="text-headline-md font-headline-md text-secondary uppercase italic">The Brooklyn Plumber Standard</h2>
+<div class="bg-surface-container-low p-6 rounded-xl relative border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary-container/30 text-6xl absolute top-2 right-4 select-none" data-icon="format_quote">format_quote</span>
+<p class="text-body-lg font-body-lg italic relative z-10">"They arrived in 40 minutes and fixed my burst pipe instantly. Professional and extremely fast."</p>
+<p class="font-bold text-secondary mt-4">— Sarah M., Brooklyn</p>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Bento Style -->
+<section class="py-section-gap px-margin-mobile">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-element-gap">
+<h2 class="text-headline-lg font-headline-lg text-secondary uppercase tracking-tight">The Brooklyn Standard</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-element-gap">
+<div class="bg-white border border-outline-variant p-6 rounded-xl space-y-4 hover:border-secondary transition-colors">
+<div class="w-12 h-12 bg-secondary-fixed flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="text-callout font-callout text-secondary">Brooklyn Licensed</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">NYC DOB licensed plumbers who know Brooklyn's unique aging infrastructure and brownstone plumbing systems.</p>
+</div>
+<div class="bg-white border border-outline-variant p-6 rounded-xl space-y-4 hover:border-secondary transition-colors">
+<div class="w-12 h-12 bg-secondary-fixed flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
+</div>
+<h3 class="text-callout font-callout text-secondary">No-Surprise Estimates</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">We provide clear, upfront pricing for Brooklyn residents before any work starts. No emergency premiums for locals.</p>
+</div>
+<div class="bg-primary text-on-primary p-6 rounded-xl space-y-4 shadow-xl">
+<div class="w-12 h-12 bg-white flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+</div>
+<h3 class="text-callout font-callout">60-Minute Guarantee</h3>
+<p class="text-body-md font-body-md">Our Brooklyn-first dispatch strategy ensures we reach your doorstep in under 60 minutes for all emergencies.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="bg-secondary py-section-gap px-margin-mobile text-on-secondary">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-gutter">
+<div class="w-full md:w-1/2 space-y-6">
+<div class="inline-block border-2 border-primary-container px-4 py-2 rounded text-primary-container font-bold uppercase tracking-widest">
+                        EST. 2014
+                    </div>
+<h2 class="text-display-lg font-display-lg">Emergency Plumbing NYC &amp; Local Services</h2>
+<p class="text-body-lg font-body-lg text-on-secondary-fixed-variant/50 leading-relaxed">We’ve built our reputation on reliability, speed, and honest service for Brooklyn neighbors. As the premier 24 hour plumber Brooklyn counts on, we don't just fix pipes; we protect your home from devastating water damage.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-on-secondary-fixed-variant p-4 rounded-lg">
+<div class="text-headline-lg font-headline-lg text-primary-container">5,000+</div>
+<div class="text-label-bold font-label-bold">Emergencies Resolved</div>
+</div>
+<div class="bg-on-secondary-fixed-variant p-4 rounded-lg">
+<div class="text-headline-lg font-headline-lg text-primary-container">24/7</div>
+<div class="text-label-bold font-label-bold">Dispatch Coverage</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-square bg-on-background/10 rounded-2xl overflow-hidden border-4 border-on-secondary-fixed-variant">
+<img class="w-full h-full object-cover" data-alt="A portrait of a friendly Brooklyn plumber." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw5HeC_1XjKWJK4UhXITtJbGvmc26ax-_gG4LCLs17shr8knDvcvxhS8gGAfFVifjk5LhfxWF1xO84viaDpSAFVjm8IDPTJoEZQm3k4UTfrDWhRcaPdMD6yVDyFeVmevMm_V-uArHzpDzqrq1OkhIKQvPdAFy3kYOBF9psVJTdItpoJcRpEIsQZV2tlhF0EEg-cINbdyd_EkctwBPg7K-JCbPyCk49aGYLG1pHEzIiDxdNdyQeWsU-fwHrECtM07WmXHqDQu23wUuN"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-section-gap px-margin-mobile">
+<div class="max-w-container-max mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-secondary mb-element-gap uppercase text-center">Comprehensive Local Services</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="bg-white border border-outline-variant p-6 rounded-lg text-center space-y-3 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="build">build</span>
+<h4 class="text-label-bold font-label-bold uppercase">Repairs</h4>
+</div>
+<div class="bg-white border border-outline-variant p-6 rounded-lg text-center space-y-3 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="cleaning_services">cleaning_services</span>
+<h4 class="text-label-bold font-label-bold uppercase">Drain Cleaning</h4>
+</div>
+<div class="bg-white border border-outline-variant p-6 rounded-lg text-center space-y-3 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="water_heater">water_heater</span>
+<h4 class="text-label-bold font-label-bold uppercase">Water Heaters</h4>
+</div>
+<div class="bg-white border border-outline-variant p-6 rounded-lg text-center space-y-3 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="plumbing">plumbing</span>
+<h4 class="text-label-bold font-label-bold uppercase">Pipe Repair</h4>
+</div>
+<div class="bg-white border border-outline-variant p-6 rounded-lg text-center space-y-3 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="toilet">bathroom</span>
+<h4 class="text-label-bold font-label-bold uppercase">Toilet &amp; Sink</h4>
+</div>
+<div class="bg-white border border-outline-variant p-6 rounded-lg text-center space-y-3 hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="home_repair_service">home_repair_service</span>
+<h4 class="text-label-bold font-label-bold uppercase">Maintenance</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA / Urgency -->
+<section class="bg-primary-fixed border-t-4 border-primary py-section-gap px-margin-mobile">
+<div class="max-w-xl mx-auto text-center space-y-6">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-symbols-outlined text-3xl" data-icon="emergency_share">emergency_share</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-primary-fixed uppercase leading-tight">🚨 NEED A BROOKLYN PLUMBER NOW?</h2>
+<p class="text-body-lg font-body-lg text-on-primary-fixed-variant">Stop the damage now. We provide the fastest emergency plumbing NYC residents can access, with licensed plumbers on standby 24/7 across Brooklyn.</p>
+<div class="pt-4 space-y-4">
+<a class="block w-full bg-primary text-on-primary py-6 px-8 rounded-lg text-center font-extrabold text-callout uppercase shadow-2xl active:scale-95 transition-transform" href="tel:7185550198">
+                        Get Emergency Plumber in 60 Minutes
+                    </a>
+<p class="text-on-primary-fixed-variant font-bold text-sm">
+                        📞 Emergency calls answered in under 5 minutes
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-10 px-margin-mobile flex flex-col items-center gap-element-gap bg-on-background text-surface">
+<div class="text-headline-sm font-headline-md font-extrabold text-primary">Brooklyn FastFlow</div>
+<div class="flex flex-wrap justify-center gap-6 text-label-bold font-label-bold mb-4">
+<div class="flex items-center gap-1 opacity-80"><span class="material-symbols-outlined text-sm" data-icon="verified">verified</span> Google Verified</div>
+<div class="flex items-center gap-1 opacity-80"><span class="material-symbols-outlined text-sm" data-icon="assignment_ind">assignment_ind</span> Licensed NYC Contractor</div>
+</div>
+<div class="flex flex-wrap justify-center gap-gutter text-label-bold font-label-bold">
+<a class="hover:text-primary transition-colors" href="#">Emergency Services</a>
+<a class="hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="hover:text-primary transition-colors" href="#">Service Areas</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+<p class="text-body-md font-body-md text-surface-variant text-center mt-4">
+            © <%= year %> Brooklyn FastFlow Plumbing. Licensed &amp; Insured NYC Contractor.
+        </p>
+</footer>
+</body></html>
