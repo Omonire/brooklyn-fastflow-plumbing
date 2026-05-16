@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A futuristic, high-conversion landing page for Brooklyn's fastest emergency plumbing service. Re-engineered for 2026 with a focus on rapid dispatch and glassmorphic UI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Omonire/brooklyn-fastflow-plumbing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Omonire/brooklyn-fastflow-plumbing/issues"
+  },
+  "homepage": "https://github.com/Omonire/brooklyn-fastflow-plumbing#readme",
+  "devDependencies": {
+    "playwright": "^1.60.0"
+  }
+}
